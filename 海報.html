@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-sizing: border-box;
+        font-family: '微軟正黑體';
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url(./bg-full.jpg);
+        justify-content: center;
+        align-items: center;
+      }
+      .main {
+        width: 80%;
+        height: 90%;
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 80px;
+      }
+      .left {
+        width: 50%;
+        height: 100%;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url(./main.jpg);
+        background-repeat: repeat, no-repeat;
+        background-size: cover, cover;
+        background-position: -200px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        color: rgb(209, 209, 209);
+        text-align: center;
+      }
+      .left .row {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: -5%;
+      }
+      .left img {
+        margin-top: 10%;
+        width: 30%;
+      }
+      .left h1 {
+        color: #fff;
+        font-size: 60px;
+      }
+      .left p {
+        width: 90%;
+        font-size: 18px;
+      }
+      .right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .right-top {
+        width: 100%;
+        height: 50%;
+        background-image: url(./cloud.png),
+          linear-gradient(rgb(164, 164, 164), rgb(164, 164, 164));
+        background-repeat: no-repeat, repeat;
+        background-size: 40%, cover;
+        background-position: 100% 105%, center;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        padding-left: 6%;
+      }
+      .right-top h1 {
+        font-size: 60px;
+      }
+      .right-top p {
+        width: 60%;
+        font-size: 18px;
+      }
+
+      .right-bottom {
+        width: 100%;
+        height: 50%;
+        background-image: url(./tifa.png),
+          linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+        background-repeat: no-repeat, repeat;
+        background-size: 40%, cover;
+        background-position: left 5% top 50%, center;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: flex-end;
+        color: rgb(209, 209, 209);
+        padding-right: 6%;
+      }
+      .right-bottom h1 {
+        color: #fff;
+        padding-right: 6%;
+        align-self: center;
+        font-size: 60px;
+      }
+      .right-bottom p {
+        width: 60%;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="left">
+        <div class="row">
+          <img src="./ps4-ff7.png" />
+          <br />
+          <h1>AVAILABLE NOW</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+            quaerat laborum adipisci est aliquid alias distinctio? Minima
+            impedit nobis odit temporibus corrupti quos vero mollitia quasi
+            magni nisi minus voluptate, voluptatum cum excepturi? Quasi quo
+            numquam vel quis aliascum excepturi?
+          </p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right-top">
+          <h1>Cloud</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            perspiciatis, blanditiis tempora consequatur sunt similique, maxime
+            excepturi quam necessitatibus inventore ab praesentium consequuntur!
+            Omnis ipsa dicta beatae provident at corporis?
+          </p>
+        </div>
+        <div class="right-bottom">
+          <h1>Tifa</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            perspiciatis, blanditiis tempora consequatur sunt similique, maxime
+            excepturi quam necessitatibus inventore ab praesentium consequuntur!
+            Omnis ipsa dicta beatae provident at corporis?
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
